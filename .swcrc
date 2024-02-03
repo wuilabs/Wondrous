@@ -1,0 +1,28 @@
+{
+    "exclude": "node_modules.*",
+    "jsc": {
+      "baseUrl": ".",
+      "paths": {
+        "@elska/joyful": ["./packages/joyful/src"],
+        "@elska/joyful/*": ["./packages/joyful/src/*"],
+        "@elska/system": ["./packages/system/src"],
+        "@elska/system/*": ["./packages/system/src/*"],
+        "@elska/utils": ["./packages/utils/src"],
+        "@elska/utils/*": ["./packages/utils/src/*"],
+        "@elska/lab": ["./packages/mui-lab/src"],
+        "@elska/lab/*": ["./packages/mui-lab/src/*"],
+        "@elska/base": ["./packages/mui-base/src"],
+        "@elska/base/*": ["./packages/mui-base/src/*"]
+      },
+      "target": "es5",
+      "parser": {
+        "syntax": "typescript",
+        "tsx": true,
+        "decorators": false,
+        "dynamicImport": false
+      }
+    },
+    "module": {
+      "type": "commonjs"
+    }
+  }
