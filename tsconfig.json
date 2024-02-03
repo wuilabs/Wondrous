@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es2020", "dom"],
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "noErrorTruncation": false,
+    "allowJs": true,
+    "paths": {
+      "@wuilabs/base": ["./packages/base/src"],
+      "@wuilabs/base/*": ["./packages/base/src/*"],
+      "@wuilabs/core": ["./packages/core/src"],
+      "@wuilabs/core/*": ["./packages/core/src/*"],
+      "@wuilabs/wondrous": ["./packages/wondrous/src"],
+      "@wuilabs/wondrous/*": ["./packages/wondrous/src/*"],
+      "@wuilabs/utils": ["./packages/utils/src"],
+      "@wuilabs/utils/*": ["./packages/utils/src/*"],
+      "@wuilabs/lab": ["./packages/mui-lab/src"],
+      "@wuilabs/lab/*": ["./packages/mui-lab/src/*"],
+    },
+    // Otherwise we get react-native typings which conflict with dom.lib.
+    "types": ["node", "react"]
+  },
+  "exclude": ["**/.*/", "**/build", "**/node_modules", "docs/export"]
+}
