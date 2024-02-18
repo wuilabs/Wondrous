@@ -1,18 +1,12 @@
 {
     "exclude": "node_modules.*",
     "jsc": {
-      "baseUrl": ".",
+      "baseUrl": "./",
       "paths": {
-        "@elska/joyful": ["./packages/joyful/src"],
-        "@elska/joyful/*": ["./packages/joyful/src/*"],
-        "@elska/system": ["./packages/system/src"],
-        "@elska/system/*": ["./packages/system/src/*"],
-        "@elska/utils": ["./packages/utils/src"],
-        "@elska/utils/*": ["./packages/utils/src/*"],
-        "@elska/lab": ["./packages/mui-lab/src"],
-        "@elska/lab/*": ["./packages/mui-lab/src/*"],
-        "@elska/base": ["./packages/mui-base/src"],
-        "@elska/base/*": ["./packages/mui-base/src/*"]
+        "@wuilabs/core": ["./packages/core/src"],
+        "@wuilabs/core/*": ["./packages/core/src/*"],
+        "@wuilabs/wondrous": ["./packages/wondrous/src"],
+        "@wuilabs/wondrous/*": ["./packages/wondrous/src/*"]
       },
       "target": "es5",
       "parser": {
