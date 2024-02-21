@@ -5,7 +5,7 @@
   "description": "",
   "author": "Wuilabs Team",
   "scripts": {
-    "test": "cross-env SWCRC=true ava"
+    "test": "cross-env SWCRC=true ava packages/**/*.{test,spec}.{ts,tsx}"
   },
   "keywords": [
     "wui",
