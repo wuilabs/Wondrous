@@ -4,7 +4,9 @@
   "description": "CSS utilities for rapidly laying out custom designs.",
   "author": "Wuilabs Team",
   "main": "./src/index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "cd ../.. && cross-env SWCRC=true ava packages/core/**/*.{test,spec}.{ts,tsx}"
+  },
   "keywords": [
     "wui",
     "wuilabs",
