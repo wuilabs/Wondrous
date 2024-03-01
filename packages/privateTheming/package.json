@@ -1,0 +1,34 @@
+{
+  "name": "@wuilabs/private-theming",
+  "version": "1.0.0",
+  "description": "Private - The React theme context to be shared with '@elska/joyful'.",
+  "author": "Wuilabs Team",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "cd ../.. && cross-env SWCRC=true ava packages/core/**/*.{test,spec}.{ts,tsx}"
+  },
+  "keywords": [
+    "wui",
+    "wuilabs",
+    "wondrous",
+    "react",
+    "react-component",
+    "design-system"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuilabs/Wondrous.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wuilabs/Wondrous/issues"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "react": "^18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  }
+}
