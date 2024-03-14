@@ -5,6 +5,7 @@
   "author": "Wuilabs Team",
   "main": "./src/index.js",
   "scripts": {
+    "build": "cd ../.. && swc ./packages/privateTheming/src -d packages/privateTheming/dist",
     "test": "cd ../.. && cross-env SWCRC=true ava packages/core/**/*.{test,spec}.{ts,tsx}"
   },
   "keywords": [
