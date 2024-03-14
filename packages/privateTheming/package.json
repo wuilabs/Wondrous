@@ -6,6 +6,7 @@
   "main": "./src/index.js",
   "scripts": {
     "build": "cd ../.. && swc ./packages/privateTheming/src -d packages/privateTheming/dist",
+    "release": "pnpm build && pnpm publish",
     "test": "cd ../.. && cross-env SWCRC=true ava packages/core/**/*.{test,spec}.{ts,tsx}"
   },
   "keywords": [
