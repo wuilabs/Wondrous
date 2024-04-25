@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es5",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "noErrorTruncation": false,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@wuilabs/core": ["./packages/core/src"],
+      "@wuilabs/core/*": ["./packages/core/src/*"],
+      "@wuilabs/wondrous": ["./packages/wondrous/src"],
+      "@wuilabs/wondrous/*": ["./packages/wondrous/src/*"]
+    }
+  },
+  "exclude": ["**/.*/", "**/build", "**/node_modules", "docs/export"]
+}
