@@ -1,0 +1,19 @@
+{
+  "exclude": "node_modules.*",
+  "jsc": {
+    "baseUrl": "./",
+    "paths": {
+      "@wuilabs/core": ["./packages/core/src"],
+      "@wuilabs/core/*": ["./packages/core/src/*"],
+      "@wuilabs/wondrous": ["./packages/wondrous/src"],
+      "@wuilabs/wondrous/*": ["./packages/wondrous/src/*"]
+    },
+    "target": "es5",
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "decorators": false,
+      "dynamicImport": false
+    }
+  }
+}
