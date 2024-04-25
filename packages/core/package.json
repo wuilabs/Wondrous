@@ -1,0 +1,31 @@
+{
+  "name": "@wuilabs/core",
+  "version": "1.0.0-alpha",
+  "description": "CSS utilities for rapidly laying out custom designs.",
+  "author": "Wuilabs Team",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "swc ./src -d dist -C module.type=commonjs --strip-leading-paths",
+    "build:cj": "swc ./src -d dist -C module.type=commonjs --strip-leading-paths"
+  },
+  "keywords": [
+    "wui",
+    "wuilabs",
+    "wondrous"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuilabs/Wondrous.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wuilabs/Wondrous/issues"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0"
+  },
+  "publishConfig": {
+    "main": "./dist/index.js"
+  }
+}
