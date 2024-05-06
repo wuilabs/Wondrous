@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   inherit: "inherit",
   current: "currentColor",
   transparent: "transparent",
