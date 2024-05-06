@@ -1,13 +1,10 @@
 import type { Config } from 'tailwindcss'
-import { content, plugin } from '@wuilabs/wondrous/utils'
+import { plugin } from '@wuilabs/wondrous/utils'
 
 const config: Config = {
   content: {
     relative: true,
-    files: [
-      '../packages/wondrous/**/*.{js,ts,jsx,tsx,mdx}',
-      // './node_modules/@wuilabs/wondrous/**/*.{js,ts,jsx,tsx,mdx}',
-    ],
+    files: ['../packages/wondrous/**/*.{js,ts,jsx,tsx,mdx}'],
   },
   theme: {
     extend: {
@@ -18,6 +15,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [plugin],
 }
 export default config
