@@ -2,12 +2,11 @@ const plugin = require('tailwindcss/plugin')
 const _merge = require('lodash/merge')
 const variablesApi = require('@mertasan/tailwindcss-variables/api')
 
+const variables = require('./variables')
 const config = require('./config')
 
-// Components
-
 module.exports = plugin.withOptions(
-  function (options = { colors: [], cssBase: true }) {
+  function (options = {}) {
     return function ({
       addComponents,
       addVariant,
@@ -26,22 +25,25 @@ module.exports = plugin.withOptions(
       // active({ addVariant, variants, e, theme, addUtilities });
       // selected({ addVariant, variants, e, theme, addUtilities });
       // disabled({ addVariant, variants, e, theme, addUtilities });
+      const wuiVariables = variables(theme)
 
       addComponents(
         variablesApi.variables(
-          _merge({}, theme('variables', {})),
+          _merge(wuiVariables.variables, theme('variables', {})),
           pluginOptions
         )
       )
 
       addComponents(
         variablesApi.darkVariables(
-          _merge({}, theme('darkVariables', {})),
+          _merge(wuiVariables.darkVariables, theme('darkVariables', {})),
           pluginOptions,
           config('darkMode')
         )
       )
     }
   },
-  () => config
+  function (options) {
+    return config
+  }
 )
